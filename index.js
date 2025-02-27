@@ -11,7 +11,7 @@ app.use(cors());
 
 
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
 const filePath = path.join(__dirname, 'data.json');
 
 fs.readFile(filePath, 'utf8', (err, data) => {
